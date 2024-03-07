@@ -14,9 +14,11 @@ namespace ChangeString
             {
                 if ( s3 == s2)
                 {
-                    s2 == "X"
+                    s3 = "X"
                 }
+                WriteLine(s3);
             }
+            
         }
     }
 }
