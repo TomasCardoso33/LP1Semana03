@@ -46,7 +46,24 @@ class Program
             }
         }
 
-      
+        if (playerPerks == Perks.None)
+        {
+            Console.WriteLine("No perks at all!");
+        }
+        else
+        {
+            Console.WriteLine($"Player perks: {playerPerks}");
+
+            if ((playerPerks & Perks.Stealth) != 0 && (playerPerks & Perks.DoubleJump) != 0)
+            {
+                Console.WriteLine("Silent jumper!");
+            }
+
+            if ((playerPerks & Perks.AutoHeal) == 0)
+            {
+                Console.WriteLine("Not gonna make it!");
+            }
+        }
     }
 }
 }
