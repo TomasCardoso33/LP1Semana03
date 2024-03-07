@@ -7,17 +7,24 @@ namespace ChangeString
         static void Main(string[] args)
         {
             Console.WriteLine("Escreve qualquer coisa:  ");
-            string s1 = ReadLine();
+            string s1 = Console.ReadLine();
             Console.WriteLine("Escreva uma letra");
-            string s2 = ReadLine();
+            string s2 = Console.ReadLine();
+            string s4 ="";
             foreach(string s3 in s1)
             {
+                s4 += s3;
                 if ( s3 == s2)
                 {
-                    s3 = "X";
+                    s4+= "X";
                 }
-                WriteLine(s3);
+                else
+                {
+                    s4+=s3;
+                }
+                
             }
+            Console.WriteLine(s4);
             
         }
     }
