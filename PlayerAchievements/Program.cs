@@ -56,8 +56,11 @@ public enum Achievements
                         {
                             players[i] = new string [2] {"DefeatOptionalBoss", "FinishGame"};
                         }
+                Console.WriteLine(string.Join("\n",players[i]));    
+
             }
-            Console.WriteLine(players);
+            
+            
 
                     
                 
